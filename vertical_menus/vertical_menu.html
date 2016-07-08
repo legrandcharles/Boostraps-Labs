@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Vertical Menu ,Legrand Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<style>
+	.custom-panel
+	{		
+		webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+	}
+	
+	.panel-heading a
+	{
+		display: inline-block;
+		padding: 5px 2px;
+		vertical-align: middle;
+		line-height: 17px;
+		font-size: 20px;
+		text-decoration:none;
+		color: #FFF;
+	}
+	
+	.panel-collapse ul
+	{
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+		line-height: 24px;
+	}
+	
+	.panel-collapse ul li
+	{
+		position: relative;
+		display: table;
+		width: 100%;
+		min-height: 48px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+          <h1 class="text-primary text-center">Vertical Menu animate on Mouse Hover</h1>
+          <div class="panel-group">
+			<div class="panel panel-default custom-panel">
+			  <div class="panel-heading" id="panel-head-view1">
+			  <a href="#panel-block-view1" data-toggle="collapse">Category1
+			  </div>
+			</div>
+			<div id="panel-block-view1" class="panel-collapse collapse">
+					<ul class="list-group">
+					  <li class="list-group-item">Subcategory1</li>
+					  <li class="list-group-item">Subcategory2</li>
+					  <li class="list-group-item">Subcategory3</li>
+					  <li class="list-group-item">Subcategory4</li>
+					</ul>
+			</div>
+			
+			<div class="panel panel-default custom-panel">
+			  <div class="panel-heading" id="panel-head-view2">
+			  <a href="#panel-block-view2" data-toggle="collapse">Category2
+			  </div>
+			</div>
+			<div id="panel-block-view2" class="panel-collapse collapse">
+					<ul class="list-group">
+					  <li class="list-group-item">Subcategory1</li>
+					  <li class="list-group-item">Subcategory2</li>
+					  <li class="list-group-item">Subcategory3</li>
+					  <li class="list-group-item">Subcategory4</li>
+					</ul>
+			</div>
+			
+			<div class="panel panel-default custom-panel">
+			  <div class="panel-heading" id="panel-head-view3">
+			  <a href="#panel-block-view3" data-toggle="collapse">Category3
+			  </div>
+			</div>
+			<div id="panel-block-view3" class="panel-collapse collapse">
+					<ul class="list-group">
+					  <li class="list-group-item">Subcategory1</li>
+					  <li class="list-group-item">Subcategory2</li>
+					  <li class="list-group-item">Subcategory3</li>
+					  <li class="list-group-item">Subcategory4</li>
+					</ul>
+			</div>
+			
+		  </div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$( "#panel-head-view1" ).mouseover(function(){
+			   $( "#panel-block-view1" ).trigger( "click" );
+			});
+			$( "#panel-head-view2" ).mouseover(function(){
+			   $( "#panel-block-view2" ).trigger( "click" );
+			});
+			$( "#panel-head-view3" ).mouseover(function(){
+			   $( "#panel-block-view3" ).trigger( "click" );
+			});
+		});
+	</script>
+  </body>
+</html>
